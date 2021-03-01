@@ -1,12 +1,23 @@
-var user_name = prompt("Salve giocatore, inserisci il tuo nome: ");
-
-var user_dice = Math.floor(Math.random() * 10) + 1 ;
-var pc_dice = Math.floor(Math.random() * 10) + 1; 
-
-if (user_dice > pc_dice) {
-    document.getElementById("outcome").innerHTML = "il vincitore è " + user_name;
-} else if (user_dice == pc_dice) {
-    document.getElementById("outcome").innerHTML = "il vincitore è il PC";
-} else if (user_dice == pc_dice) {
-    document.getElementById("outcome").innerHTML = "il vincitore è il PC";
+var personal_mail = prompt("Inserisci la tua mail");
+var final_coutcome;
+var array =   [ "giorgio@gmail.com",
+                "francesco@gmail.com",
+                "mario_rossi@gmail.com",
+                "gianluca.palermitani@gmail.com",
+                "WGliAlberi@treedom.tree",
+                "morte.nera05@hotmail.com",
+                "luigi@gmail.com",
+                "lupo_rossogiallo00@gmail.com"  ]
+if (isNan(personal_mail) == true) {
+    for (var i = 0; i < array.length; i++) {
+        if (array[i] == obj) {
+            final_coutcome = "La mail inserita è nella lista";
+        } else {
+            final_coutcome  = "La mail inserita NON è nella lista";
+        }
+    }
+} else {
+    document.getElementById("outcome").innerHTML = "Formato mail non valido";   
 }
+
+document.getElementById("outcome").innerHTML = final_coutcome
