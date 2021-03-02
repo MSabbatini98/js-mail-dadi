@@ -6,6 +6,31 @@
 }
 
 /* basic css formatting */
+body  {
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(8,0,252,1) 80%);
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+h1  {
+    font-variant: small-caps;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.box{
+    background: rgba(255, 255, 255, 0.7);
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 10px;
+    /* box-shadow: blue; */
+}
+.scores p{
+    line-height: 23px;
+}
 .scores{
     display: flex;
     justify-content: space-around;
