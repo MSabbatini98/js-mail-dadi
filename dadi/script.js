@@ -52,7 +52,7 @@ for (var current_round = 0; current_round != round; current_round++) {
     // stampa a video il valore dei dadi di user e pc
     document.getElementById("pc_roll").innerHTML += "Il pc ha lanciato " + pc_dice + '<br>';
     document.getElementById("user_roll").innerHTML += "Tu hai lanciato ha lanciato " + user_dice  + '<br>';
-    console.log("Il vincitore del round è ", winner)
+    console.log( winner)
 }
 
 // controlla il vincitore finale al meglio di round tiri
@@ -66,6 +66,7 @@ if (user_score > pc_score) {
 
 // falling confetti if win 
 if (user_name == final_winner){
+    /*
     party.screen({ 
         count: 500 * (window.innerWidth / 1980),
         countVariation: 0.5,
@@ -75,7 +76,7 @@ if (user_name == final_winner){
         rotationVelocityLimit: 6,
         scaleVariation: 0.8
     });
-    
+    */
     document.getElementById("outcome").innerHTML = "Congratulazioni !! Il vincitore è " + final_winner;
 
 } else {

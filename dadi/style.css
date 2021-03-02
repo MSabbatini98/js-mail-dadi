@@ -1,0 +1,15 @@
+/* General reset */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* basic css formatting */
+.scores{
+    display: flex;
+    justify-content: space-around;
+}
+.results{
+    text-align: center;
+}
